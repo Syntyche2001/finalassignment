@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Assignment 2">
+<meta name="keywords" content="GymBoxx, GymBoxx Singapore, Assignment 2, Basic HTML, Basic CSS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+  body{
+    margin: 0;
+    background-color: black;
+  }
+
+/*Sticky for navigation bar*/
+  div.sticky {
+    position: sticky;
+    top: 0;
+  }
+
+/*Navigation bar*/
+  ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.8);
+    margin-bottom: -80px;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+    font-size: 150%;
+    font-family: sans-serif;
+  }
+
+  li a:hover {
+    background-color: #000000;
+  }
+
+  * {
+  box-sizing: border-box;
+}
+
+/*GYMBOXX logo in nav bar*/
+.resize {
+  width: 100px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+/*Flex containers*/
+.flex-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.flex-container > div {
+width:100%;
+text-align: center;
+font-size: 20px;
+color: black;
+}
+
+/*CSS for the words*/
+.header {
+  font-family: sans-serif;
+  font-size: 80px;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+p {
+  font-size: 30px;
+  font-family: sans-serif;
+  margin-top: 2%;
+  color: #ffffff;
+}
+
+h1 {
+  color: #211551;
+  text-align: center;
+  font-size: 60px;
+}
+
+/*Footer CSS*/
+footer {
+  text-align: center;
+  padding: 0px;
+  background: black;
+  width: 1200px;
+  height: 460px;
+
+}
+
+/*Footer social media buttons*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/*Membership plans */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.container {
+  padding: 0 16px;
+  height: 300px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+/*Buttons CSS*/
+.button {
+
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  background-color: #D6001C;
+  cursor: pointer;
+  width: 950px;
+  height: 50px;
+
+
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/*Table CSS*/
+table {
+  font-family: arial, sans-serif;
+  width: 100%;
+  color: black;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td, th {
+  border: 1px solid #F0F0F0;
+  text-align: left;
+  padding: 30px;
+}
+
+tr:nth-child(even) {
+  background-color: #F0F0F0;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!--Navigation bar with sticky-->
+  <div class="sticky" style="z-index:2;">
+    <ul>
+        <li><center><img src="gymboxxlogo.png" alt="gymboxx Logo" class="resize" width="90px"></center></li>
+        <li><a class="active" href="index.html"><b>ABOUT US</b></a></li>
+        <li><a href="ourrates.html"><b>OUR RATES</b></a></li>
+        <li><a href="ourgyms.html"><b>OUR GYMS</b></a></li>
+    </ul>
+  </div>
+
+<!--Header Image-->
+<center><img src="gymlocations.png" alt="F45 Team" width="80%" height="500px" ></center>
+
+<!--First flex container-->
+<div class="plan">
+      <header class="header" style="padding-top: 1%;"><b>Membership Plans</b></header>
+    </div>
+
+        <div class="planwords" >
+          <p>Joining fee ($60) and Reactivation Fee ($30) applies for all membership plan. Access to all gyms. Payment must be made in full for all membership plans. GYMMBOXX Pte Ltd reserve the rights to amend any of the terms and conditions stated here without prior notice.
+            <br>
+            <br
+        </p>
+
+
+<!--our rates -->
+<style>
+.row1{
+  position: absolute;
+  top: -78%;
+  left:-3%;
+  width: 1000px;
+}
+
+.plan{
+  position: absolute;
+  top: 75%;
+  left: 22%;
+
+}
+
+.planwords{
+  position: absolute;
+  top: 205%;
+  left: 4%;
+}
+</style>
+
+
+
+
+<div class="row1">
+      <img src="months.jpg" alt="month rates">
+
+    </div>
+
+
+
+
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Sign up button-->
+<div style="text-align: center">
+<a href="https://gymmboxx.com/contact-us/" target="_blank" class="button">SIGN UP NOW!</a></div>
+<br>
+<br>
+
+<!--Footer stuff-->
+<!--Footer stuff-->
+<footer>
+  <header class="header" style="padding-top:3%;"><b>TODAY IS THE VICTORY OF TOMMORROW.</b></header>
+  <p style="text-align: center;">Contact Us: <u>+65 9363 8883</u> | Email: <u>enquiries@gymmboxx.com</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <a href="https://gymmboxx.com/faqs/" target="_blank"><br>FAQ</a> | <a href="https://gymmboxx.com/gym-rules/" target="_blank">Gym Rules</a> |  <a href="https://gymmboxx.com/terms-conditions/" target="_blank">TERMS</a>
+</p>
+<div style="background-color: #121212; width: 600px; height: 0.3vh; margin-left: auto; margin-right: auto;"></div>
+<br>
+<!--Footer social media buttons-->
+<a href="https://www.facebook.com/gymmboxx/" target="_blank" class="fa fa-facebook"></a>
+<a href="https://twitter.com/gymmboxx?lang=en" target="_blank" class="fa fa-twitter"></a>
+<a href="https://www.youtube.com/channel/UC6roofCh8bFamTXMlXEIEbw" target="_blank" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/gymmboxx/?hl=en/" target="_blank" class="fa fa-instagram"></a>
+</footer>
+</body>
+</html>

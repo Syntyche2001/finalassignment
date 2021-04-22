@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Assignment 2">
+<meta name="keywords" content="GymBoxx, GymBoxx Singapore, Assignment 2, Basic HTML, Basic CSS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+  body{
+    margin: 0;
+    background-color: black;
+  }
+
+/*Sticky for navigation bar*/
+  div.sticky {
+    position: sticky;
+    top: 0;
+  }
+
+/*Navigation bar*/
+  ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.8);
+    margin-top: -2px;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+    font-size: 150%;
+    font-family: sans-serif;
+  }
+
+  li a:hover {
+    background-color: #808080;
+  }
+
+  * {
+  box-sizing: border-box;
+}
+
+/*Background video*/
+#myVideo {
+  position: relative;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  background-size: cover;
+   -webkit-filter: blur(10px);
+        -moz-filter: blur(10px);
+        -o-filter: blur(10px);
+        -ms-filter: blur(10px);
+        filter: blur(10px);
+  }
+
+.content {
+  position: fixed;
+  bottom: 0;
+  max-height: 20%;
+  background: black;
+  overflow: hidden;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 0px;
+  z-index: -2;
+}
+
+/*GymBoxx logo overlay*/
+.overlay {
+  position: absolute;
+  top: 35%;
+  left: 32%;
+  width: 35%;
+  height: 50%;
+}
+.overlay img{
+  position:absolute;
+  left:0;top:0;
+  width:50%;
+  height:60%;
+  object-fit:cover;
+  pointer-events:none;
+  z-index:2;
+}
+
+/*GymBoxx logo in nav bar*/
+.resize {
+  width: 100px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+/*Flex containers*/
+.flex-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.flex-container > div {
+width:100%;
+text-align: center;
+font-size: 20px;
+color: black;
+}
+
+/*Smaller containers*/
+.block {
+  width: 50%;
+  height: 200px;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20px;
+}
+
+.container {
+  text-align: left;
+}
+
+.block img {
+ width: 700px;
+ height: 300px;
+ float: left;
+}
+
+/*CSS for the headers*/
+.header {
+  font-family:sans-serif;
+  font-size: 80px;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+/*CSS for the paragraphs*/
+p {
+  font-size: 30px;
+  font-family: sans-serif;
+  margin-top: 2%;
+  color: #ffffff;
+}
+
+/*Footer CSS*/
+footer {
+  text-align: center;
+  padding: 0px;
+  background: black;
+  width: 100%;
+  height: 460px;
+}
+
+/*Footer social media buttons*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!--Navigation bar with sticky-->
+  <div class="sticky" style="z-index:2;">
+    <ul>
+      <li><center><img src="gymboxxlogo.png" alt="gymboxx Logo" class="resize" width="100%"></center></li>
+        <li><a class="active" href="index.html"><b>ABOUT US</b></a></li>
+        <li><a href="ourrates.html"><b>OUR RATES</b></a></li>
+      <li><a href="ourgyms.html"><b>OUR GYMS</b></a></li>
+    </ul>
+  </div>
+
+<!--Background video-->
+<div class="myVideo" style="z-index:1;">
+  <video autoplay muted loop id="myVideo">
+    <source src="backgroundvid.mp4" width=100%; type="video/mp4">
+      Your browser does not support HTML5 video.
+  </video>
+</div>
+
+<!--Background video logo overlay-->
+<img src="image3.png" alt='gymboxx Logo' class="overlay">
+
+<!--First flex container-->
+<div class="flex-container">
+  <div>
+    <img src="image8.png" width="50%" height="20%" alt="F45 Class" style="float:left;">
+      <header class="header" style="padding-top:4%; display: inline-block;"><b>About GymBoxx</b></header>
+      <hr>
+      <p> GYMMBOXX started as a single gym situated at the top of a multi-storey car park in Singapore. Over the years, GYMMBOXX has made its mark as Singapore’s affordable premium gym brand, serving the residential neighbourhoods and heartlands.
+        <br>
+        <br>
+
+        <br>
+      </p>
+    </div>
+
+
+    <!--image1 for decoration-->
+<img src="image2.jfif" alt="gymboxx" width="100%" height="60%" margin="0" position="absolute">
+
+
+<!--Second flex container-->
+<div class="flex-container">
+  <div>
+    <img src="image4.jpg" width="60%" height="20%" alt="gymboxx" style="float:right;">
+    <header class="header" style="padding-top:4%;"><b>Our Goal</b></header>
+    <hr>
+    <h1 style="color:#ffffff; font-size:30px">
+      Personal Training</h1>
+      <p>Our primary objective as a team is to push your overall performance further than you can imagine. Whether your goal is fat loss, strength/conditioning, muscle building, athletic performance or injury rehab, you can be rest assured that you are in good hands.
+        <br>
+      </p>
+    </div>
+
+<!--image2 for decoration-->
+<img src="image6.png" alt="gymboxx" width="100%" height="850px" margin="0" position="absolute">
+
+<!--Smaller container blocks-->
+<header class="header" style="padding-top:4%;"><b>3 PRINCIPLES OF GYMBOXX</b></header>
+  <br>
+  <div class="container">
+    <div class="block">
+      <img src="image7.jpg">
+
+        </div>
+        <br>
+
+<!--Footer stuff-->
+<footer>
+    <header class="header" style="padding-top:4%;"><b>BUILDING A FITTER TOMORROW, TODAY</b></header>
+    <p style="text-align: center;">Contact Us: <u>+65 9363 8883</u> | Email: <u>enquiries@gymmboxx.com</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="https://gymmboxx.com/faqs/" target="_blank"><br>FAQ</a> | <a href="https://gymmboxx.com/gym-rules/" target="_blank">GYMRULES</a> |  <a href="https://gymmboxx.com/terms-conditions/" target="_blank">TERMS</a>
+    </p>
+    <div style="background-color: #121212; margin-left: auto; margin-right: auto; width: 80%; height: 0.3vh;"></div>
+    <br>
+
+<!--Footer social media buttons-->
+  <a href="https://www.facebook.com/gymmboxx/" target="_blank" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/gymboxofficial?lang=en" target="_blank" class="fa fa-twitter"></a>
+  <a href="https://www.youtube.com/channel/UC6roofCh8bFamTXMlXEIEbw" target="_blank" class="fa fa-youtube"></a>
+  <a href="https://www.instagram.com/gymmboxx/?hl=en" target="_blank" class="fa fa-instagram"></a>
+</footer>
+
+</body>
+</html>
